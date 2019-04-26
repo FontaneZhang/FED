@@ -1,0 +1,84 @@
+span {
+    background-color: red;
+}
+
+.main-display-none  .div-first {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+.main-display-none  .div-second {
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+}
+.main-display-none  .div-third {
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+}
+
+.main-display-inline  .div-first {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    display: inline;
+}
+.main-display-inline  .div-second {
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+    display: inline;
+}
+.main-display-inline  .div-third {
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+    display: inline;
+}
+
+.main-display-block {
+    margin-top: 10px;
+}
+.main-display-block span {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-top: 5px;
+}
+
+.main-display-list-item span{
+    display: list-item;
+    margin-top: 5px;
+    background-color: #e0e1e2;
+}
+
+a{
+    width: 17px;
+    height: 20px;
+    font:12px/20px "宋体";
+    border:1px solid #e0e1e2;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #2052a3;
+}
+.pageBtn{
+    width: 64px;
+}
+a:hover, .active{
+    background-color: #1f3a87;
+    color: #fff;
+}
+
+.main-display-table {
+    display: table;
+    width: 1000px;
+    border:1px solid #000000;
+}
+.main-display-table div {
+    display: table-cell;
+    border:1px solid #000000;
+}
+
+
