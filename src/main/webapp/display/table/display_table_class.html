@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>display table表格</title>
+<style type="text/css">
+.table, .table * {margin: 20px auto; padding: 0;font-size: 14px;font-family: Arial, 宋体, Helvetica, sans-serif;}
+.table {display: table; width: 80%; border-collapse: collapse; }
+.table-caption { display: table-caption; text-align: center; font-size: 20px; font-weight: bold; }
+.table-thead { display: table-header-group; }
+.table-tbody { display: table-row-group; }
+.table-tfoot { display: table-footer-group; }
+.table-colgroup { display: table-column-group; }
+.table-column-left { display: table-column; background: red}
+.table-column-middle { display: table-column; background: lightblue}
+.table-column-right { display: table-column; background: green}
+.table-tr {display: table-row; height: 30px;}
+.table-th {display: table-cell;font-weight: bold;height: 100%;border: 1px solid gray;text-align: center;vertical-align: middle;background-color:#E5E5E5;}
+.table-td {display: table-cell; height: 100%;border: 1px solid gray; text-align: center;vertical-align: middle;}
+</style>
+</head>
+<body>
+    <div class="table">
+        <div class="table-caption">报表标题</div>
+        <div class="table-colgroup">
+            <div class="table-column-left"></div>
+            <div class="table-column-middle"></div>
+            <div class="table-column-right"></div>
+        </div>
+        <div class="table-thead">
+            <div class="table-tr">
+                <div class="table-th">省份/直辖市</div>
+                <div class="table-th">GDP(亿元)</div>
+                <div class="table-th">增长率</div>
+            </div>
+        </div>
+        <div class="table-tbody">
+            <div class="table-tr">
+                <div class="table-td">广东</div>
+                <div class="table-td">72812</div>
+                <div class="table-td">8.0%</div>
+            </div>
+            <div class="table-tr">
+                <div class="table-td">河南</div>
+                <div class="table-td">37010</div>
+                <div class="table-td">8.3%</div>
+            </div>
+            <div class="table-tr">
+                <div class="table-td">江苏</div>
+                <div class="table-td">70116</div>
+                <div class="table-td">8.5%</div>
+            </div>
+        </div>
+        <div class="table-tfoot">报表结尾：报表说明</div>
+    </div>
+</body>
+</html>

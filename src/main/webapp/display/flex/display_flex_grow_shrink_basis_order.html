@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>display-flex</title>
+<style type="text/css">
+    .box,.box2,.box3,.box4 { width:100%; height:100px; border:1px solid #000;
+        margin-bottom:20px; display:-webkit-flex; display:flex; }
+    .box div,.box2 div,.box3 div,.box4 div { width:50px; height:50px; line-height:50px;
+        text-align:center; background:#ccc;  }
+    /*默认为0*/
+
+    /*等分*/
+    .box2 div:nth-of-type(1) { flex-grow:1; }
+    .box2 div:nth-of-type(2) { flex-grow:1; }
+    .box2 div:nth-of-type(3) { flex-grow:1; }
+    .box2 div:nth-of-type(4) { flex-grow:1; }
+
+    /*所有子项目flex-grow值的总和 1+2+3+4=10*/
+    .box3 div:nth-of-type(1) { flex-grow:1; }   /*10分之1*/
+    .box3 div:nth-of-type(2) { flex-grow:2; }	/*10分之2*/
+    .box3 div:nth-of-type(3) { flex-grow:3; }	/*10分之3*/
+    .box3 div:nth-of-type(4) { flex-grow:4; }   /*10分之4*/
+    .box3 div { border: 1px solid red; }
+
+    /*order默认为0*/
+    .box4 div:nth-of-type(1) {  }
+    .box4 div:nth-of-type(2) { order:-1; }
+    .box4 div:nth-of-type(3) { order:-2; }
+    .box4 div:nth-of-type(4) { order:2; }
+    .box4 div:nth-of-type(5) { order:1; }
+
+    /* flex-shrink：项目的缩小比例，默认为1，即空间不够就缩小 */
+
+    /* flex-basis：在分配多余空间之前，项目占据的主轴空间的大小，相当于width */
+
+</style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div><div>2</div><div>3</div><div>4</div>
+    </div>
+    <div class="box2">
+        <div>1</div><div>2</div><div>3</div><div>4</div>
+    </div>
+    <div class="box3">
+        <div>1</div><div>2</div><div>3</div><div>4</div>
+    </div>
+    <div class="box4">
+        <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+    </div>
+</body>
+</html>
